@@ -50,9 +50,13 @@ body{  background:var(--cor-bg)}
      width: 15%;
 
 }
- .logo img{
-     width: 100%; 
+ .logo img {
+  aspect-ratio: 3 / 2;
+  width: 100%; /* ou defina uma largura fixa, como 150px */
+  height: auto;
+  object-fit: cover; /* ou `contain`, dependendo do efeito desejado */
 }
+
  label[for="bt-menu"]{display: none;}
  .menu input[type="checkbox"]{display: none;}
   
